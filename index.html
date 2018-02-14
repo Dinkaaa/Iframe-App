@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapp">
+        <iframe id="iframe" src="iframe.html" frameborder="0">
+            
+        </iframe>
+        <aside>
+            <div class="components">
+            <h1>Components</h1>
+                <ul id="component-nav">
+                    <li data-hover="Modal" data-tab="tab-modal" class="active" >Modal</li>
+                    <li data-hover="Button" data-tab="tab-button">Button</li>
+                    <li data-hover="Title" data-tab="tab-title">Title</li>
+                    <li data-hover="Button Text" data-tab="tab-button_text">Button Text</li>
+                </ul>
+            </div>
+            <div class="settings">
+                <h1>Settings</h1>
+                <div class="tab tab-modal active">
+                    <h2>Modal</h2>
+                    <div class="setting-item">
+                        <span>Background color</span>
+                        <input id="modal-bg-color" type="color">
+                    </div>
+                    <div class="setting-item">
+                        <span>Border color</span>
+                        <input id="modal-border-color" type="color">
+                    </div>
+                    
+                </div>
+                <div class="tab tab-button">
+                    <h2>Button</h2>
+                        <div class="setting-item">
+                        <span>Background color</span>
+                        <input id="btn-bg-color" type="color">
+                    </div>
+                    <div class="setting-item">
+                        <span>Text Style</span>
+                        <ul id="btn-text-style" class="text-options">
+                            <li data-value="b">B</li>
+                            <li data-value="i">I</li>
+                            <li data-value="u">U</li>
+                            <li data-value="strike">S</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab tab-title">
+                    <h2>Title</h2>
+                        <div class="setting-item">
+                        <span>Color</span>
+                        <input id="title-color" type="color">
+                    </div>
+                    <div class="setting-item">
+                        <span>Text Style</span>
+                        <ul id="title-text-style" class="text-options">
+                            <li data-value="b">B</li>
+                            <li data-value="i">I</li>
+                            <li data-value="u">U</li>
+                            <li data-value="strike">S</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab tab-button_text">
+                    <h2>Button Text</h2>
+                        <input id="btn-text" maxlength="20" value="Understand">
+                </div>
+            </div>
+        </aside>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/tab.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
